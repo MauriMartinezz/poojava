@@ -1,10 +1,11 @@
-public class Medic {
+public class Doctor {
     static int id;
     String name;
     String speciality;
 
-   Medic(String nombre){
-        name = nombre;
+    Doctor(String nombre, String speciality){
+        this.name = nombre;
+        this.speciality = speciality;
         id++;
     }
 
