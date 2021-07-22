@@ -6,13 +6,14 @@ public class Main {
         System.out.println(myDoctor.name);
         System.out.println(myDoctor.speciality);
 
-        Patient patient = new Patient("Alejandra", "alejandra@mail.com");
 
         patient.setPhoneNumber("12356732");
         System.out.println(patient.getPhoneNumber());
         patient.setName("Alejandro");
         System.out.println(patient);*/
-        System.out.println(Day.FRIDAY.getSpanish());
+        //System.out.println(Day.FRIDAY.getSpanish());
+        Patient patient = new Patient("Alejandra", "alejandra@mail.com");
+        System.out.println(patient);
     }
     public enum Day {
         MONDAY("Lunes"),
