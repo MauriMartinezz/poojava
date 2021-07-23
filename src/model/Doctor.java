@@ -1,3 +1,5 @@
+package model;
+
 public class Doctor extends User{
     static String speciality;
 
@@ -16,6 +18,6 @@ public class Doctor extends User{
 
     @Override
     public String toString() {
-        return "Doctor: " + super.toString() + "\nSpeciality " + speciality;
+        return "model.Doctor: " + super.toString() + "\nSpeciality " + speciality;
     }
 }

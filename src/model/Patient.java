@@ -1,3 +1,5 @@
+package model;
+
 public class Patient extends User{
 
     private String birthday, blood;
@@ -40,7 +42,7 @@ public class Patient extends User{
 
     @Override
     public String toString() {
-        return "Patient: \n" +
+        return "model.Patient: \n" +
                 super.toString() +
                 " birthday='" + birthday + '\'' +
                 ", blood='" + blood + '\'' +
