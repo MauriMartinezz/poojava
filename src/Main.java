@@ -1,18 +1,15 @@
-import static ui.UIMenu.*;
+import model.Patient;
+import model.Doctor;
+
 public class Main {
     public static void main(String[] args) {
         //showMenu();
-        /*Doctor myDoctor = new Doctor("Marcos", "Cardiologo");
-        System.out.println(myDoctor.name);
-        System.out.println(myDoctor.speciality);
+        model.Doctor myDoctor = new Doctor("Marcos", "Cardiologo");
+        System.out.println(myDoctor.getName());
+        System.out.println(myDoctor.getSpeciality());
 
         Patient patient = new Patient("Alejandra", "alejandra@mail.com");
-
-        patient.setPhoneNumber("12356732");
-        System.out.println(patient.getPhoneNumber());
-        patient.setName("Alejandro");
-        System.out.println(patient);*/
-        System.out.println(Day.FRIDAY);
+        System.out.println(patient.getBirthday());
     }
     public enum Day {
         MONDAY("Lunes"),
