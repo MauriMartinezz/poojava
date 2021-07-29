@@ -17,6 +17,12 @@ public class Doctor extends User{
     }
 
     @Override
+    public void showData(){
+        System.out.println(getClass().getSimpleName());
+        System.out.println("\nNombre: " + this.getName());
+        System.out.println("\nEspecialidad: " + this.getSpeciality());
+    };
+    @Override
     public String toString() {
         return "model.Doctor: " + super.toString() + "\nSpeciality " + speciality;
     }

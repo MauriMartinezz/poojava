@@ -13,4 +13,10 @@ public class Nurse extends User{
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
+    @Override
+    public void showData(){
+        System.out.println(getClass().getSimpleName());
+        System.out.println("\nNombre: " + this.getName());
+        System.out.println("\nEspecialidad: " + this.getSpeciality());
+    }
 }
