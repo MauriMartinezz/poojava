@@ -60,9 +60,4 @@ public abstract class User {
         return "Name: " + name + ", Email: " + email + "\nAddress: " + address + ", Phone: " + phoneNumber;
     }
 
-    public void showData(){
-        System.out.println(getClass().getSimpleName());
-        System.out.println("\nNombre: " + this.getName());
-        System.out.println("\nTelefono: " + this.getPhoneNumber());
-    };
 }
