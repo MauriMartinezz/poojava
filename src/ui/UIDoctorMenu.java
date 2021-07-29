@@ -21,6 +21,17 @@ public class UIDoctorMenu {
 
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
+
+            switch (response){
+                case 1:
+                    showAddAvailableAppoinmentsMenu();
+                    break;
+                case 2:
+                    break;
+                case 0:
+                    UIMenu.showMenu();
+                    break;
+            }
         }while(response != 0);
     }
     private static void showAddAvailableAppoinmentsMenu(){
@@ -32,7 +43,7 @@ public class UIDoctorMenu {
 
             for (int i = 0; i < 3; i++) {
                 int j = i+1;
-                System.out.println(j + ". " + UIMenu.MONTHS);
+                System.out.println(j + ". " + UIMenu.MONTHS[i]);
             }
             System.out.println("0. Return");
 
@@ -58,7 +69,7 @@ public class UIDoctorMenu {
                     responseTime = Integer.valueOf(sc.nextLine());
                 }while(responseTime == 2);
                 UIMenu.doctorLogged.addAvailableAppointment(date, time);
-//                checkDoctorAvailableAppointment(UIMenu.doctorLogged);
+                checkDoctorAvailableAppointment(UIMenu.doctorLogged);
             }else if(response == 0){
                 showDoctorMenu();
             }

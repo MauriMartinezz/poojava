@@ -32,7 +32,7 @@ public class UIMenu {
                 case 2:
                     authUser(2);
                     res = 0;
-//                    showPatientMenu();
+                    showPatientMenu();
                     break;
                 case 0:
                     System.out.println("Thanks for your visit");
