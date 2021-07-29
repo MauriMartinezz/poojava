@@ -1,8 +1,13 @@
 package ui;
 
+import model.Doctor;
+
+import java.awt.image.AreaAveragingScaleFilter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UIDoctorMenu {
+    public static ArrayList<Doctor> doctorsAvailableAppointments = new ArrayList<>();
     public static void showDoctorMenu(){
         int response = 0;
 
@@ -52,10 +57,17 @@ public class UIDoctorMenu {
                     System.out.println("Your time is " + time + "\n1. Correct \n2. Change Time");
                     responseTime = Integer.valueOf(sc.nextLine());
                 }while(responseTime == 2);
-                UIMenu.doctorLogged.addAvailableAppointment(data, time);
+                UIMenu.doctorLogged.addAvailableAppointment(date, time);
+//                checkDoctorAvailableAppointment(UIMenu.doctorLogged);
             }else if(response == 0){
                 showDoctorMenu();
             }
         }while(response != 0);
+    }
+
+    private static void checkDoctorAvailableAppointment(Doctor doctor){
+        if(doctor.getAvailableAppointments().size() > 0 && !doctorsAvailableAppointments.contains(doctor)){
+            doctorsAvailableAppointments.add(doctor);
+        }
     }
 }
