@@ -53,6 +53,8 @@ public abstract class User {
             }
     }
 
+    public void showData(){};
+
     @Override
     public String toString() {
         return "Name: " + name + ", Email: " + email + "\nAddress: " + address + ", Phone: " + phoneNumber;

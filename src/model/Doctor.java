@@ -17,6 +17,13 @@ public class Doctor extends User{
     }
 
     @Override
+    public void showData(){
+        System.out.println("Doctor\n");
+        System.out.println("Hopsital: HA\n");
+        System.out.println("Sector: Cardiologia\n");
+
+    }
+    @Override
     public String toString() {
         return "model.Doctor: " + super.toString() + "\nSpeciality " + speciality;
     }
