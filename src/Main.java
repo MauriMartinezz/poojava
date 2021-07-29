@@ -5,18 +5,18 @@ import model.User;
 public class Main {
     public static void main(String[] args) {
         //showMenu();
-//        model.Doctor myDoctor = new Doctor("Marcos", "Cardiologo");
-//        System.out.println(myDoctor.getName());
-//        System.out.println(myDoctor.getSpeciality());
-//
-//        Patient patient = new Patient("Alejandra", "alejandra@mail.com");
-//        System.out.println(patient.getBirthday());
+        model.Doctor myDoctor = new Doctor("Marcos", "Cardiologo");
+        //System.out.println(myDoctor.getName());
+       // System.out.println(myDoctor.getSpeciality());
+        myDoctor.showData();
 
+   //     Patient patient = new Patient("Alejandra", "alejandra@mail.com");
+     //   System.out.println(patient.getBirthday());
 
-        User usuario = new User("Carlos", "carlos@gmail.com") {
+        User usuario = new User("joaquin", "joaquin@mail.com") {
             @Override
             public void showData() {
-                System.out.println("Soy un usuario " + this.getName());
+                System.out.println("Soy una clase anonima anashe");
             }
         };
 
@@ -38,6 +38,4 @@ public class Main {
             return spanish;
         }
     }
-
-
 }

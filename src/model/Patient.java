@@ -41,6 +41,10 @@ public class Patient extends User{
     }
 
     @Override
+    public void showData(){
+
+    }
+    @Override
     public String toString() {
         return "model.Patient: \n" +
                 super.toString() +
